@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#090b10" />
+  <title>DROPZONE — CS2 Upgrade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Dropzone — главная"><span class="brand-mark">D<span>·</span></span><span class="brand-name">DROP<span>ZONE</span><small>CS2 SKIN LAB</small></span></a>
+    <nav class="main-nav"><a class="active" href="#upgrade">Апгрейд</a><a href="#inventory">Инвентарь</a><a href="#how">Как играть</a></nav>
+    <div class="top-actions"><div class="balance"><span class="coin">◆</span><span id="balance">2 450</span><small>₽</small></div><button class="profile"><span class="avatar">A</span><span>Профиль</span><span class="chevron">⌄</span></button><button class="menu-toggle" aria-label="Открыть меню">☰</button></div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy"><div class="eyebrow"><span class="live-dot"></span> CS2 UPGRADE SYSTEM <span class="eyebrow-line"></span></div><h1>ПОДНИМИ<br>СТАВКИ<span class="accent">.</span></h1><p>Твой инвентарь. Твой шанс. Один точный апгрейд — и желанный скин уже твой.</p><a class="hero-link" href="#upgrade">Начать апгрейд <span>↘</span></a></div>
+      <div class="hero-art"><div class="hero-ring ring-a"></div><div class="hero-ring ring-b"></div><div class="hero-glow"></div><img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=85" alt="Киберспортивная арена в неоновых огнях"/><div class="hero-tag"><span>СЕЗОН 04</span><b>Время рисковать</b></div><div class="hero-stat"><span class="stat-icon">↗</span><span><b>до 95%</b><small>Шанс апгрейда</small></span></div></div>
+      <div class="hero-index">01 <i></i> 03</div>
+    </section>
+
+    <section class="upgrade-section" id="upgrade">
+      <div class="section-heading"><div><div class="eyebrow">ТВОЙ СЛЕДУЮЩИЙ ДРОП</div><h2>АПГРЕЙД <span class="accent">СКИНА</span></h2></div><div class="heading-note"><span class="pulse"></span> ПРОВЕРЬ УДАЧУ</div></div>
+      <div class="upgrade-board">
+        <div class="selection-card source-card"><div class="card-top"><span>01 / ТВОЙ СКИН</span><button class="tiny-help" title="Выбери предмет из инвентаря">?</button></div><div class="weapon-stage source-stage"><div class="item-glow"></div><img id="sourceImage" src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=700&q=85" alt="Выбранный скин"/><div class="item-float">AK-47</div></div><div class="item-info"><div><small id="sourceRarity">ЗАПРЕЩЁННОЕ</small><h3 id="sourceName">Неоновый гонщик</h3></div><strong><span>◆</span><span id="sourcePrice">1 240</span> ₽</strong></div></div>
+        <div class="upgrade-center"><div class="multiplier"><span>МНОЖИТЕЛЬ</span><strong id="multiplier">×3.0</strong></div><div class="chance-ring" id="chanceRing"><div class="ring-inner"><strong id="chance">32%</strong><span>ШАНС</span></div><div class="ring-marker"></div></div><div class="chance-caption"><span class="pulse"></span> ВЫСОКИЙ РИСК — БОЛЬШАЯ НАГРАДА</div><button class="upgrade-button" id="upgradeButton"><span class="button-shine"></span><span id="buttonLabel">ИСПЫТАТЬ УДАЧУ</span><b>↗</b></button><div class="upgrade-status" id="upgradeStatus">Нажми, чтобы запустить апгрейд</div></div>
+        <div class="selection-card target-card"><div class="card-top"><span>02 / ЖЕЛАННЫЙ СКИН</span><button class="change-target" id="changeTarget">СМЕНИТЬ <span>↗</span></button></div><div class="weapon-stage target-stage"><div class="item-glow"></div><img id="targetImage" src="https://images.unsplash.com/photo-1595590424283-b8f17842773f?auto=format&fit=crop&w=700&q=85" alt="Желаемый скин"/><div class="item-float">AWP</div></div><div class="item-info"><div><small id="targetRarity">ЗАСЕКРЕЧЕННОЕ</small><h3 id="targetName">Неонуар</h3></div><strong><span>◆</span><span id="targetPrice">3 720</span> ₽</strong></div></div>
+        <div class="board-grid"></div>
+      </div>
+      <div class="board-foot"><span><i class="shield">✓</i> Честный шанс на каждый апгрейд</span><span>ВЫБИРАЙ СКИНЫ ИЗ СПИСКА НИЖЕ <b>↓</b></span></div>
+    </section>
+
+    <section class="inventory-section" id="inventory"><div class="inventory-head"><div><div class="eyebrow">ТВОЯ КОЛЛЕКЦИЯ</div><h2>МОЙ <span class="accent">ИНВЕНТАРЬ</span></h2></div><div class="inventory-meta"><span>ДОСТУПНО <b>04</b></span><button class="filter-button">Фильтр <span>☷</span></button></div></div><div class="inventory-grid" id="inventoryGrid"></div></section>
+    <section class="how-section" id="how"><div class="eyebrow">ТРИ ШАГА ДО ЦЕЛИ</div><h2>ВСЁ <span class="accent">ПРОСТО</span></h2><div class="steps"><article><b>01</b><span class="step-icon">◈</span><h3>Выбери свой скин</h3><p>Предмет из инвентаря станет ставкой для апгрейда.</p></article><article><b>02</b><span class="step-icon">◎</span><h3>Найди желанный</h3><p>Выбери скин, который хочешь получить.</p></article><article><b>03</b><span class="step-icon">↗</span><h3>Испытай удачу</h3><p>Запусти апгрейд и следи за результатом.</p></article></div></section>
+  </main>
+  <footer><a class="brand" href="#top"><span class="brand-mark">D<span>·</span></span><span class="brand-name">DROP<span>ZONE</span><small>CS2 SKIN LAB</small></span></a><span>Фан-концепт интерфейса. Не является реальным казино.</span><span>© 2025 DROPZONE</span></footer>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
